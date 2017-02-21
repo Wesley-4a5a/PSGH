@@ -34,4 +34,9 @@ $('body').keydown(function(e){
 function consolePost(){
   var input = document.getElementById('consoleInput').value;
   document.getElementById('consoleShow').innerHTML = input;
+  if (input == 'yarr'){
+      document.getElementById('consoleShow').innerHTML = 'Welcome Captain Stalin!';
+      var cssLink = $('link[href*="fake.css"]');
+      cssLink.replaceWith('<link href="PSGHBackdoor.css" type="text/css" rel="stylesheet">');
+  }
 }
