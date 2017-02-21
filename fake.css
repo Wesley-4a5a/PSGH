@@ -10,7 +10,7 @@ body{
   visibility: hidden;
   position: absolute;
   left: 5vw;
-  top: 5vh;
+  top: -30vh;
   width: 25vw;
   height: 25vh;
   border: 1px red solid;
