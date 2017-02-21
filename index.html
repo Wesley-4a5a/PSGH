@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
-        <link href="datgames.css" rel="stylesheet" type="text/css">  
+
+        <link href="datgames.css" rel="stylesheet" type="text/css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/jquery.shadow-animation/1/mainfile"></script>
         <meta name="description" content="Pirate Stalin's Game Hub">
         <meta name="keywords" content="Pirate Stalins Game Hub,PSGH.nl,PSGH,Pirate Stalin,Monopoly,TicTacHo,SuperSimon,Hangman">
         <title>Pirate Stalin's Game Hub</title>
     </head>
     <body>
 
-<audio controls autoplay loop style='visibility: hidden;'>
+<audio controls autoplay loop style="visibility: hidden;">
   <source src="Music/Soviet.mp3" type="audio/mpeg">
 </audio>
 
         <br><br><br><br>
-        <div id=titel>Pirate Stalin's Game Hub</div>
+        <div id='titel'>Pirate Stalin's Game Hub</div>
         <div id=nav><br>
             <span onmouseover="Menu()">Database</span>
-            || 
-            <a href="Hangman/HangMan.html">Hangman</a> 
-            || 
-            <a href="TTT/BhuterKaasEggies.html">TicTacToe</a> 
+            ||
+            <a href="Hangman/HangMan.html">Hangman</a>
+            ||
+            <a href="TTT/BhuterKaasEggies.html">TicTacToe</a>
             ||
             <a href="Simon/Simon.html">Super Simon</a>
             ||
@@ -45,7 +47,10 @@
             <input  type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
             <img border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif" width="1" height="1">
         </form>
-
+<div id='console'>
+  <textarea readonly id='consoleShow'></textarea>
+  <input type='search' id='consoleInput' onsearch="consolePost()" />
+</div>
     <script src="PSGH.js"></script>
 
     </body>

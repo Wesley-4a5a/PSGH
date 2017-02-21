@@ -9,11 +9,20 @@ function Leave()
     document.getElementById("submenu").style.visibility = "hidden";
 }
 
+var consoleState = 'hidden';
 
 $('body').keydown(function(e){
-                if(e.keyCode == 65)
+                if(e.keyCode == 192)
                 {
-                  alert('lol');
+                  if (consoleState == 'hidden'){
+                    console.log('lol');
+                    document.getElementById('console').style.visibility = 'visible';
+                    consoleState = 'visible';
+                  }
+                  else if (consoleState == 'visible'){
+                    document.getElementById('console').style.visibility = 'hidden';
+                    consoleState = 'hidden';
+                  }
                     //Song+= "A";
                     //Hond += "<img src=IMG/A.png class='arrozz'>";
                     //var audio = new Audio('AudioOcarina/A.wav');
@@ -21,3 +30,8 @@ $('body').keydown(function(e){
                     //console.log(Song.length);
                 }
 });
+
+function consolePost(){
+  var input = document.getElementById('consoleInput').value;
+  document.getElementById('consoleShow').innerHTML = input;
+}

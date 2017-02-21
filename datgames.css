@@ -65,7 +65,7 @@ a:visited{
     left: 16vw;
     top: 2.5vw;
     border: 2px groove blue;
-    background-color: grey; 
+    background-color: grey;
     width: 40vh;
     visibility: hidden;
     font-size: 80%;
@@ -101,18 +101,22 @@ a:visited{
     bottom: 5vh;
 }
 
-#nuh{
-position: absolute;
-top: 0;
-left: 0;
-width: 20vw;
-height: 20vh;
+#console{
+  visibility: hidden;
+  position: absolute;
+  left: 5vw;
+  top: 5vh;
+  width: 25vw;
+  height: 25vh;
+  border: 1px red solid;
+
 }
 
-#noah{
-position: absolute;
-top: 0;
-right: 0;
-width: 20vw;
-height: 20vh;
+#consoleShow{
+  width: inherit;
+  height: inherit;
+}
+
+#consoleInput{
+  width: inherit;
 }
