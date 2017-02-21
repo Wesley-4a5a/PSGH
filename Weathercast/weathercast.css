@@ -1,0 +1,417 @@
+   
+html, a, button{  
+cursor: url(IMG/NaviCursor.gif), auto;
+}
+
+body{
+    background-image: url('IMG/weathercast.png');
+    background-size: 105vw;
+
+}
+
+#uitleg{
+    position: absolute;
+    bottom: 35vh;
+    left: 27vw;
+    border: green 1vh groove;
+    font-size: 1vw;
+    width: 40vw;
+    background-color: rgba(53,66,74,1);
+    padding: 1vw;
+    color: white;
+    box-shadow: -1px -4px 3000px 3000px rgba(0,0,0,565);
+}
+
+#triforce{
+    position:absolute;
+    left: 65vw;
+    top: -0.5vh;
+    width: 15vw;
+    z-index: -1;
+}
+
+#navi{
+    position: absolute;
+    left: 65vw;
+    bottom: 50vh;
+    width: 25vh;
+    z-index: 5;
+}
+
+#vak1{
+    position: absolute;
+    bottom: 35vh;
+    left: 25vw;
+    width: 15vw;
+  
+}
+
+#vak2{
+    position: absolute;
+    bottom: 35vh;
+    left: 41vw;
+    width: 15vw;
+}
+
+#vak3{
+    position: absolute;
+    bottom: 36vh;
+    left: 57vw;
+    width: 15vw;
+}
+
+#mainplaatje1{
+    position:absolute;
+    bottom: 60vh;
+    left: 41vw;
+    width: 15vw;
+}
+#mainplaatje2{
+    position:absolute;
+    bottom: 60vh;
+    left: 41vw;
+    font-size: 15vw;
+}
+
+#plaatke1{
+    width: 75%;
+}
+#plaatke2{
+    width: 75%;
+}
+#plaatke3{
+    width: 50%;
+}
+#keuze{
+    width: 75%;
+}
+
+#score{
+    color: #00FF00;
+    font-size: 1.2vw;
+    font-family: '8bit_wondernominal';
+    margin-left: 1vw;    
+}
+
+#tijd{
+    color: #00FF00;
+    font-size: 1.2vw;
+    font-family: '8bit_wondernominal';
+    margin-left: 1vw;   
+}
+
+#levens{
+    color: #00FF00;
+    font-size: 1.2vw;
+    font-family: '8bit_wondernominal';
+    margin-left: 1vw;   
+}
+
+#hund{
+    color: red;
+}
+
+#showuser{
+    color: #00FF00;
+    font-family: '8bit_wondernominal';
+    font-size: 1.2vw;
+    margin-left: 1vw;            
+}
+
+#welkomuser{
+    position: absolute;
+    bottom: 0.5vw;
+    left: 13vw;
+    color: white;
+    height: auto;
+    width: auto;
+    padding: 2vh;
+    color: #00FF00;
+    font-size: 1.7vw;
+    font-family: '8bit_wondernominal';
+    z-index: 5;         
+}
+
+#berichtus{
+    position: absolute;
+    left: 35vw;
+    top: 40vh;
+    border: red 2px groove;
+    background-color: #2E2E2E;
+    color: white;
+    width: auto;
+    height: auto;
+    font-size: 1.8vw;
+    z-index: 10000;
+    visibility: hidden;
+    padding: 1vh;
+    text-align: center;
+    box-shadow: -1px -4px 3000px 3000px rgba(0,0,0,0.65);
+}
+
+#gimmename{
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    color:black;
+}        
+
+#menuback{
+    position: absolute;
+    bottom: 1vw;
+    left: 1vw;
+    border: red 2px groove;
+    background-color: #2E2E2E;
+    height: auto;
+    width: 10vw;
+    padding: 2vh;
+    color: #00FF00;
+    font-size: 1.7vw;
+    font-family: '8bit_wondernominal';
+    text-align: center;
+    z-index: 5;
+}
+
+#logout{
+    position: absolute;
+    bottom: 1vw;
+    left: 15vw;
+    border: red 2px groove;
+    background-color: #2E2E2E;
+    height: auto;
+    width: 10vw;
+    padding: 2vh;
+    color: #00FF00;
+    font-size: 1.7vw;
+    font-family: '8bit_wondernominal';
+    text-align: center;
+    z-index: 5;
+}
+
+#mute{
+    position: absolute;
+    bottom: 1vw;
+    left: 29vw;
+    border: red 2px groove;
+    background-color: #2E2E2E;
+    height: auto;
+    width: auto;
+    padding: 2vh;
+    color: #00FF00;
+    font-size: 1.7vw;
+    font-family: '8bit_wondernominal';
+    text-align: center;
+    z-index: 5;
+}
+
+
+#userkies{
+    position: absolute;
+    left: 35vw;
+    top: 40vh;
+    padding: 5vw;
+    color: #00FF00;
+    font-family: '8bit_wondernominal';
+    background-color: black;
+    border: red 2px groove;
+    opacity: 0.96;
+    box-shadow: -1px -4px 3000px 3000px rgba(0,0,0,0.75);
+    z-index: 5;
+}
+
+#highscore{
+    font-family: '8bit_wondernominal';
+    position: absolute;
+    left: 30vw;
+    top: 15vh;
+    font-size: 1.3vw;
+    color:white;
+    background-color: #f81d2d;
+    text-align: center;
+}
+
+#terug{
+    font-family: "8bit_wondernominal";
+    position: absolute;
+    top: 5vh;
+    left: 30vw;
+    width: 10vw;
+    height: 6vh;
+}
+
+#gamesel{
+    font-family: "8bit_wondernominal";
+    position: absolute;
+    top: 5vh;
+    left: 46vw;
+    width: 10vw;
+    height: 6vh;
+}
+
+#startalius{
+    color: #00FF00;
+    background-color: #2E2E2E;
+    font-size: 1.5vw;
+    border: red 2px groove;
+    font-family: '8bit_wondernominal';
+    position: absolute;
+    bottom: 25vh;
+    left: 41vw;
+    width: 10vw;
+    height: 10vh;
+    z-index: 0;
+}
+
+#HUD{
+    margin-top: 3vh;
+    padding: 0.5vw;
+    max-width: 35vw;
+}
+
+.muziekje{
+    visibility: hidden;
+    width: 0.1vw;
+    height: 0.1vh;
+}
+
+#muziekje{
+    visibility: hidden;
+    width: 0.1vw;
+    height: 0.1vh;
+}
+
+#testeew{
+    position:absolute;
+    border: 2px red groove;
+    top: 35vh;
+    left: 29vw;
+    font-size: 15vw;
+    visibility: hidden;
+}
+
+#keuzekaart{
+    position:absolute;
+    bottom: 60vh;
+    left: 41vw;
+    width: 15vw; 
+    font-size: 15vw;
+    
+}
+
+#div1{
+    color: black;
+    float:left;
+}        
+#div2{
+    color: red;
+    float:left;
+}        
+#div3{
+    color: blue;
+    float:left;
+}        
+#div4{
+    color: green;            
+    float:left;
+}
+
+.spelkeuze{
+    border: 2px red groove;
+    font-size: 50vw;
+    font-family: '8bit_wondernominal';            
+}
+
+#spelkeuz1{
+    position: absolute;
+    left: 10vw;
+    top: 30vh;
+    font-size: 1.8vw;
+    font-family: '8bit_wondernominal';       
+    color: #00FF00;
+    text-shadow: -0.1vw 0 black, 0 0.1vw black, 0.1vw 0 black, 0 -0.1vw black;
+    text-align: center;
+}
+
+#spelkeuz2{    
+    position: absolute;
+    left: 33vw;
+    top: 45vh;
+    font-size: 1.8vw;
+    font-family: '8bit_wondernominal';         
+    color: #00FF00;
+    text-shadow: -0.1vw 0 black, 0 0.1vw black, 0.1vw 0 black, 0 -0.1vw black;
+    text-align: center;
+}
+
+#spelkeuz3{    
+    position: absolute;
+    left: 66vw;
+    top: 60vh;
+    font-size: 1.8vw;
+    font-family: '8bit_wondernominal';         
+    color: #00FF00;
+    text-shadow: -0.1vw 0 black, 0 0.1vw black, 0.1vw 0 black, 0 -0.1vw black;
+    text-align: center;
+}
+  
+/*#titel{*/
+/*    position: absolute;*/
+/*    left: 26.5vw;*/
+/*    text-align: center;*/
+/*    font-size: 2vw;*/
+/*    font-family: '8bit_wondernominal';    */
+/*    color: #00FF00;*/
+/*    text-shadow: -0.2vw 0 black, 0 0.2vw black, 0.2vw 0 black, 0 -0.2vw black;*/
+/*} */
+
+#weather{
+    position: absolute;
+    left: 26vw;
+    top: 13vh;
+    font-size: 4vw;
+    font-family: '8bit_wondernominal';  
+    color: #00FF00;
+    text-shadow: -0.2vw 0 black, 0 0.2vw black, 0.2vw 0 black, 0 -0.2vw black;
+}
+
+#cast{
+    position: absolute;
+    left: 57vw;
+    top: 13vh;
+    font-size: 4vw;
+    color: #00FF00;
+    font-family: '8bit_wondernominal';  
+    z-index: 0;
+    text-shadow: -0.2vw 0 black, 0 0.2vw black, 0.2vw 0 black, 0 -0.2vw black;
+}
+
+
+#titelmini{
+    position: absolute;
+    left: 38vw;
+    top: 16.6vh;
+    text-shadow: -0.2vw 0 black, 0 0.2vw black, 0.2vw 0 black, 0 -0.2vw black;
+    text-decoration: underline overline;
+    width: 25vw;
+    font-size: 2.3vw;
+    font-family: '8bit_wondernominal';    
+    color: #00FF00;
+}  
+  
+a{
+    text-decoration: none;
+    color: inherit;
+}  
+  
+        
+@font-face {
+font-family: '8bit_wondernominal';
+src: url('Fonts/8-bitwonder-webfont.eot');
+src: url('Fonts/8-bitwonder-webfont.eot?#iefix') format('embedded-opentype'),
+     url('Fonts/8-bitwonder-webfont.woff2') format('woff2'),
+     url('Fonts/8-bitwonder-webfont.woff') format('woff'),
+     url('Fonts/8-bitwonder-webfont.ttf') format('truetype'),
+     url('Fonts/8-bitwonder-webfont.svg#8bit_wondernominal') format('svg');
+font-weight: normal;
+font-style: normal;
+}

@@ -1,0 +1,164 @@
+    
+    body{
+        background-color: black;
+        background-size: cover;
+    }
+        
+    table{
+        position: relative;
+        margin: 0 auto;
+        top: 15vh;
+        border-collapse: collapse;
+        text-align: center;
+        font-size: 9vw;
+        }
+    
+    div{
+        background-color: gray;
+    }
+    div:hover{
+        background-color: lightgray;
+    }
+    
+    #dezemode{
+        background-color: gray;
+        border: black 0.1vw groove;
+        color: white;
+        position: absolute;
+        top: 5vh;
+        left: 40vw;
+        font-size: 2.5vw;
+    }
+    
+    #aap1{
+        width:10vw;
+        height:10vw;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-radius: 2vw;
+        background-size: cover;
+        opacity: 0.8;
+        }
+        
+    #aap2{
+        width:10vw;
+        height:10vw;
+        border-left: 1px solid black;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-radius: 2vw;
+        background-size: cover;
+        opacity: 0.8;
+        }
+    
+    #aap3{
+        width:10vw;
+        height:10vw;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-radius: 2vw;
+        background-size: cover;
+        opacity: 0.8;
+        }
+        
+    #aap4{
+        width:10vw;
+        height:10vw;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        border-radius: 2vw;
+        background-size: cover;
+        opacity: 0.8;
+        }
+    
+    #aap5{
+        width:10vw;
+        height:10vw;
+        border: 1px solid black;
+        border-radius: 2vw;
+        background-size: cover;
+        opacity: 0.8;
+        }
+    
+    #aap6{
+        width:10vw;
+        height:10vw;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        border-radius: 2vw;
+        background-size: cover;
+        opacity: 0.8;
+        opacity: 0.8;
+        }
+    
+    #aap7{
+        width:10vw;
+        height:10vw;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        border-radius: 2vw;
+        background-size: cover;
+        opacity: 0.8;
+        }
+    
+    #aap8{
+        width:10vw;
+        height:10vw;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        border-radius: 2vw;
+        background-size: cover;
+        opacity: 0.8;
+        }
+    
+    #aap9{
+        width:10vw;
+        height:10vw;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        border-radius: 2vw;
+        background-size: cover;
+        opacity: 0.8;
+        }
+    
+    #berichies{
+        position: relative;
+        bottom: 28vh;
+        margin: 0 auto;
+        width: 25vw;
+        height: 24vh;
+        background-color: #3399ff;
+        color: #00FF00;
+        border: red groove 3px;
+        visibility: hidden;
+        text-align: center;
+        font-size: 3vw;
+        box-shadow: -1px -4px 3000px 3000px rgba(0,0,0,0.65);
+    }
+    
+    #mode{
+        position: absolute;
+        top: 5vh;
+        left: 5vh;
+        width: 12vw;
+        height: 11vh;
+        font-size: 3vh;
+        padding: 0.2vw;
+        text-align: center;
+        border: green 0.2vw groove;
+    }
+    
+    #startgame{
+        position:absolute;
+        top: 19vh;
+        left: 9vh;
+        width: 8vw;
+        height: 4vh;
+        font-size: 3vh;
+        padding: 0.2vw;
+        text-align: center;
+        border: green 0.2vw groove;
+    }

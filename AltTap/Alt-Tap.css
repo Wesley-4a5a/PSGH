@@ -1,0 +1,282 @@
+        body{
+            background-image: url("gengar.png");
+            background-size: cover;
+        }
+        
+
+        #titel{
+          position: absolute;
+          left: 1.5vw;
+          top: 4vh;
+          color: #00FF00;
+          font-family: '8bit_wondernominal';
+          text-align: center;
+          font-size: 4vw;
+          text-shadow: -5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple;
+          width: 100%;
+        }
+
+        #subtitel{
+          position: absolute;
+          left: 1.5vw;
+          top: 60vh;
+          font-family: '8bit_wondernominal';
+          text-align: center;
+          font-size: 4vw;
+          width: 100%;
+        }
+
+        #normaal{
+          color: #00FF00;   
+          text-shadow: -5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple;    
+        }
+        #inverta{
+          color: purple;
+          text-shadow: -5px 0 #00FF00, 0 5px #00FF00, 5px 0 #00FF00, 0 -5px #00FF00; 
+        }
+
+        #highscore{
+            font-family: '8bit_wondernominal';
+            position: absolute;
+            left: 30vw;
+            top: 15vh;
+            font-size: 1.3vw;
+            color:white;
+            background-color: #f81d2d;
+            text-align: center;
+        }
+        
+        #terug{
+            font-family: "8bit_wondernominal";
+            position: absolute;
+            top: 5vh;
+            left: 30vw;
+            width: 10vw;
+            height: 6vh;
+        }
+        
+        #gamesel{
+            font-family: "8bit_wondernominal";
+            position: absolute;
+            top: 5vh;
+            left: 46vw;
+            width: 10vw;
+            height: 6vh;
+        }
+        
+        #carta1{
+            background-color:blue;
+            height: 40vh;
+            width: 20vw;
+            margin: 20px;
+            color: white;
+            font-size: 6vw;
+        }
+        
+        #carta2{
+            position: absolute;
+            left: 33.5vw;
+            background-color:blue;
+            height: 40vh;
+            width: 20vw;
+            margin: 20px;
+            color: white;
+            font-size: 6vw;
+        }
+        
+        #middon{
+            position: absolute;
+            left: 23vw;
+            top: 23vh;
+            background-color:black;
+            height: 20vh;
+            width: 10vw;
+            color: #00FF00;
+            font-size: 1.5vw;
+            font-family: '8bit_wondernominal';
+            
+        }
+        
+        #startalius{
+            position: absolute;
+            left: 23vw;
+            top: 50vh;
+            width: 10vw;
+            height: 10vh;
+            font-size: 1.5vw;
+            z-index: 0;
+        }
+        
+        #volgendendelon{
+            position: absolute;
+            left: 23vw;
+            top: 10vh;
+            width: 10vw;
+            height: 10vh;
+            font-size: 150%
+        }
+        
+        #showuser{
+            color: #00FF00;
+            font-size: 1.7vw;
+            margin-left: 1vw;
+        }
+
+        #punten{
+            color: #00FF00;
+            font-size: 1.7vw;
+            margin-left: 1vw;
+        }
+    
+        #tijden{
+            color: #00FF00;
+            font-size: 1.7vw;
+            margin-left: 1vw;
+        }
+        
+        #berichtus{
+            position: absolute;
+            left: 35vw;
+            top: 40vh;
+            border: red 2px groove;
+            background-color: #3366cc;
+            color: white;
+            width: auto;
+            height: 3auto;
+            font-size: 1.8vw;
+            z-index: 10000;
+            visibility: hidden;
+            padding: 1vh;
+            text-align: center;
+            box-shadow: -1px -4px 3000px 3000px rgba(0,0,0,0.65);
+        }
+
+        #regels{
+            border: red 2px groove;
+            color: #00FF00;
+            background-color: black;
+            position: absolute;
+            left: 15vw;
+            top: 70vh;
+            font-size: 1.4vw;
+            opacity: 0.8;
+            text-align: center;
+        }
+        
+        #selectmode{
+            position: absolute;
+            top: 20vh;
+            left: 10vw;
+            font-family: '8bit_wondernominal';
+            width: auto;
+            padding: 5vh;
+            display: inline;
+            color: #00FF00;
+            font-size: 1.3vw;
+            background-color: black;
+            border: red 2px groove;
+            opacity: 0.8;
+            
+        }
+    
+        
+        a:visited{
+            color: #00FF00;
+        }
+        
+        #leadershow{
+            position: absolute;
+            left: 73.5vw;
+            top: 33.4vh;
+            width: 19.5vw;
+            background-color: black;
+            font-size: 1.3vw;
+            border: red 2px groove;
+            opacity: 0.8;
+            font-family: '8bit_wondernominal';
+            color: #00FF00;   
+            z-index: 5;
+            visibility: hidden;
+            letter-spacing: 1px;
+        }
+        
+        #gimmename{
+            position: absolute;
+            left: -10%;
+            bottom: 0;
+            color:black;
+        }        
+        #menuback{
+            position: absolute;
+            bottom: 1vw;
+            left: 1vw;
+            border: red 2px groove;
+            color: white;
+            background-color:black;
+            height: auto;
+            width: 10vw;
+            padding: 2vh;
+            color: #00FF00;
+            font-size: 1.7vw;
+            font-family: '8bit_wondernominal';
+            text-align: center;
+            z-index: 5;
+        }
+        
+        #logout{
+            position: absolute;
+            bottom: 1vw;
+            left: 15vw;
+            border: red 2px groove;
+            color: white;
+            background-color:black;
+            height: auto;
+            width: 10vw;
+            padding: 2vh;
+            color: #00FF00;
+            font-size: 1.7vw;
+            font-family: '8bit_wondernominal';
+            text-align: center;
+            z-index: 5;
+        }
+        
+        #userkies{
+            position: absolute;
+            left: 35vw;
+            top: 40vh;
+            padding: 5vw;
+            color: #00FF00;
+            font-family: '8bit_wondernominal';
+            background-color: black;
+            border: red 2px groove;
+            opacity: 0.96;
+            box-shadow: -1px -4px 3000px 3000px rgba(0,0,0,0.75);
+            z-index: 5;
+        }
+        
+        #welkomuser{
+            position: absolute;
+            bottom: 0.5vw;
+            left: 13vw;
+            color: white;
+            height: auto;
+            width: auto;
+            padding: 2vh;
+            color: #00FF00;
+            font-size: 1.7vw;
+            font-family: '8bit_wondernominal';
+            z-index: 5;         
+        }
+
+        @font-face {
+        font-family: '8bit_wondernominal';
+        src: url('Fonts/8-bitwonder-webfont.eot');
+        src: url('Fonts/8-bitwonder-webfont.eot?#iefix') format('embedded-opentype'),
+             url('Fonts/8-bitwonder-webfont.woff2') format('woff2'),
+             url('Fonts/8-bitwonder-webfont.woff') format('woff'),
+             url('Fonts/8-bitwonder-webfont.ttf') format('truetype'),
+             url('Fonts/8-bitwonder-webfont.svg#8bit_wondernominal') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        }
+        

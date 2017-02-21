@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript" type="text/javascript" src="HangMan.js"></script>
+        <link href="HangMan.css" rel="stylesheet" type="text/css">        
+        <title> HENGMEN </title>
+    </head>
+    <body>
+        <div id="Alphabet">
+            <input onclick="changeA(); vergelijk()" type="button" value="A" id="A"></input>
+            <input onclick="changeB(); vergelijk()" type="button" value="B" id="B"></input>
+            <input onclick="changeC(); vergelijk()" type="button" value="C" id="C"></input>
+            <input onclick="changeD(); vergelijk()" type="button" value="D" id="D"></input>
+            <input onclick="changeE(); vergelijk()" type="button" value="E" id="E"></input>
+            <input onclick="changeF(); vergelijk()" type="button" value="F" id="F"></input>
+            <input onclick="changeG(); vergelijk()" type="button" value="G" id="G"></input>
+            <input onclick="changeH(); vergelijk()" type="button" value="H" id="H"></input>
+            <input onclick="changeI(); vergelijk()" type="button" value="I" id="I"></input>
+            <input onclick="changeJ(); vergelijk()" type="button" value="J" id="J"></input>
+            <input onclick="changeK(); vergelijk()" type="button" value="K" id="K"></input>
+            <input onclick="changeL(); vergelijk()" type="button" value="L" id="L"></input>
+            <input onclick="changeM(); vergelijk()" type="button" value="M" id="M"></input>
+            <input onclick="changeN(); vergelijk()" type="button" value="N" id="N"></input>
+            <input onclick="changeO(); vergelijk()" type="button" value="O" id="O"></input>
+            <input onclick="changeP(); vergelijk()" type="button" value="P" id="P"></input>
+            <input onclick="changeQ(); vergelijk()" type="button" value="Q" id="Q"></input>
+            <input onclick="changeR(); vergelijk()" type="button" value="R" id="R"></input>
+            <input onclick="changeS(); vergelijk()" type="button" value="S" id="S"></input>
+            <input onclick="changeT(); vergelijk()" type="button" value="T" id="T"></input>
+            <input onclick="changeU(); vergelijk()" type="button" value="U" id="U"></input>
+            <input onclick="changeV(); vergelijk()" type="button" value="V" id="V"></input>
+            <input onclick="changeW(); vergelijk()" type="button" value="W" id="W"></input>
+            <input onclick="changeX(); vergelijk()" type="button" value="X" id="X"></input>        
+            <input onclick="changeY(); vergelijk()" type="button" value="Y" id="Y"></input>
+            <input onclick="changeZ(); vergelijk()" type="button" value="Z" id="Z"></input>
+        </div>
+    
+        <div id="Hang">
+            
+             <div>
+                    <span id=Hang1>
+                        _________
+                    </span>
+                    
+                    <span id="Hang2">
+                    |<br>
+                    |<br>
+                    |<br>
+                    |<br>
+                    |<br>
+                    |
+                    </span>
+                    
+                    <span id="Hang3">
+                        _______<br>
+                        /
+                    </span>
+                 
+                    <span id="Hang4">
+                        |
+                    </span>
+                     
+                    <span id="Hang5">
+                        (_)
+                    </span> 
+                     
+                    <span id="Hang6">
+                        \|/
+                    </span>                
+                
+                    <span id=Hang7>  
+                        |
+                    </span>
+                    
+                    <span id="Hang8">
+                        / \
+                    </span>
+            </div>
+            
+        </div>
+        
+        <input id=newgame type="button" onClick="history.go(0)" VALUE="New Game">
+        <input id=startgame type="button" onClick="Woordplaatser()" VALUE="Start Game">
+        
+        <input type="button" value="Hint:" id=Hint>
+        
+        <br>
+        <input type="button" value=" " id="Letter1">
+        <input type="button" value=" " id="Letter2">
+        <input type="button" value=" " id="Letter3">
+        <input type="button" value=" " id="Letter4">
+        <input type="button" value=" " id="Letter5">
+        <input type="button" value=" " id="Letter6">
+        <input type="button" value=" " id="Letter7">
+        <input type="button" value=" " id="Letter8">
+        <input type="button" value=" " id="Letter9">
+        <input type="button" value=" " id="Letter10">
+        
+        
+        
+       <a href="../index.html"><input id=back type="button" value="Back"></a>        
+        
+        <div id="Gordijn"></div>
+        
+    </body>
+</html>
+

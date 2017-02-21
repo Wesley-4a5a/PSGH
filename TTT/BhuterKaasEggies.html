@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buterke Kaas en Eggies</title>
+        <link id='style1' href='boterke.css' type='text/css' rel='stylesheet'>   
+        
+<style></style>
+<script>
+    
+    var turn = "x";
+    var mode;
+    var victory = false;
+    var stylecheck = 1;
+    
+    function styleAap(){
+        if(stylecheck == 1){
+           document.getElementById('style1').href = 'boterkes.css';
+           stylecheck = 2;
+        }
+        else{
+            document.getElementById('style1').href = 'boterke.css';   
+            stylecheck = 1;
+        }
+    }
+    
+    
+    function Clicky(C)
+    {
+        if (mode == 'spelerke')
+        {
+            if((turn == 'x') && (document.getElementById("aap"+C).innerHTML != frikandel) && (document.getElementById("aap"+C).innerHTML != hellman) && (victory == false)){
+                document.getElementById("aap"+C).innerHTML = 'X';
+                document.getElementById("aap"+C).style.textShadow = "-5px 0 #00FF00, 0 5px #00FF00, 5px 0 #00FF00, 0 -5px #00FF00";
+                document.getElementById("aap"+C).disabled = "true";
+                //document.getElementById('id').style.pointerEvents = 'none';
+                turn = "o";
+                Check();
+                VCheck();
+            }
+            else if((turn == 'o') && (document.getElementById("aap"+C).innerHTML != frikandel) && (document.getElementById("aap"+C).innerHTML != hellman) && (victory == false)){
+                document.getElementById("aap"+C).innerHTML = 'O';
+                document.getElementById("aap"+C).style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+                document.getElementById("aap"+C).disabled = "true";
+                //document.getElementById('id').style.pointerEvents = 'none';
+                turn = "x";
+                Check();
+                VCheck();
+            }
+        }
+        else if (mode == 'easymode')
+        {
+            if((turn == 'x') && (document.getElementById("aap"+C).innerHTML != frikandel) && (document.getElementById("aap"+C).innerHTML != hellman) && (victory == false)){
+                document.getElementById("aap"+C).innerHTML = 'X';
+                document.getElementById("aap"+C).style.textShadow = "-5px 0 #00FF00, 0 5px #00FF00, 5px 0 #00FF00, 0 -5px #00FF00";
+                document.getElementById("aap"+C).disabled = "true";
+                //document.getElementById('id').style.pointerEvents = 'none';
+                turn = "o";
+                Check();
+                VCheck();
+                easyAI();
+            }
+        }
+         else if (mode == 'hardmode')
+        {
+            if((turn == 'x') && (document.getElementById("aap"+C).innerHTML != frikandel) && (document.getElementById("aap"+C).innerHTML != hellman) && (victory == false)){
+                document.getElementById("aap"+C).innerHTML = 'X';
+                document.getElementById("aap"+C).style.textShadow = "-5px 0 #00FF00, 0 5px #00FF00, 5px 0 #00FF00, 0 -5px #00FF00";
+                document.getElementById("aap"+C).disabled = "true";
+                //document.getElementById('id').style.pointerEvents = 'none';
+                turn = "o";
+                Check();
+                VCheck();
+                hardAI();
+            }
+        }
+        else if (mode == null){
+             alert('Kies een Modus');
+        }
+    }
+    
+   var frikandel = 'X';
+   var hellman = 'O';
+
+function easyAI(){
+    console.log('test 1');
+    var turnrandom = Math.floor((Math.random() * 9) + 1);
+    if(document.getElementById("aap"+turnrandom).innerHTML != frikandel && document.getElementById("aap"+turnrandom).innerHTML != hellman && victory == false)
+    {
+        setTimeout(function() {
+        document.getElementById('aap'+turnrandom).innerHTML = 'O';
+        document.getElementById("aap"+turnrandom).style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+        turn = 'x';
+        Check();
+        VCheck();
+        }, 1000);
+
+    }
+    else{
+        easyAI();
+    }
+}
+
+function hardAI(){
+setTimeout(function() {
+if (een == "" && ((drie == "X" && twee == "X") || (negen == "X" && vijf == "X") || (zeven == "X" && vier == "X"))) {
+    document.getElementById('aap1').innerHTML = 'O';
+    document.getElementById('aap1').style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+    turn = 'x';
+} else {
+    if (twee == "" && ((een == "X" && drie == "X") || (acht == "X" && vijf == "X"))) {
+        document.getElementById('aap2').innerHTML = 'O';
+        document.getElementById('aap2').style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+        turn = 'x';
+        }
+    else{
+    if (drie == "" && ((een == "X" && twee == "X") || (zeven == "X" && vijf == "X") || (negen == "X" && zes == "X"))) {
+        document.getElementById('aap3').innerHTML = 'O';
+        document.getElementById('aap3').style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+        turn = 'x';
+        }
+        else{
+        if (negen == "" && ((zeven == "X" && acht == "X") || (een == "X" && vijf == "X") || (drie == "X" && zes == "X"))) {
+            document.getElementById('aap9').innerHTML = 'O';
+            document.getElementById('aap9').style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+            turn = 'x';
+            }
+            else{
+            if (zeven == "" && ((negen == "X" && acht == "X") || (drie == "X" && vijf == "X") || (een == "X" && vier == "X"))) {
+                document.getElementById('aap7').innerHTML = 'O';
+                document.getElementById('aap7').style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+                turn = 'x';
+                }
+                else{
+                if (acht == "" && ((negen == "X" && zeven == "X") || (twee == "X" && vijf == "X"))) {
+                    document.getElementById('aap8').innerHTML = 'O';
+                    document.getElementById('aap8').style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+                    turn = 'x';
+                    }
+                    else{
+                    if (vier == "" && ((zes == "X" && vijf == "X") || (een == "X" && zeven == "X"))) {
+                        document.getElementById('aap4').innerHTML = 'O';
+                        document.getElementById('aap4').style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+                        turn = 'x';
+                        }
+                        else{
+                        if (zes == "" && ((drie == "X" && negen == "X") || (vijf == "X" && vier == "X"))) {
+                            document.getElementById('aap6').innerHTML = 'O';
+                            document.getElementById('aap6').style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+                            turn = 'x';
+                            }
+                            else{
+                            if (vijf == "" && ((drie == "X" && zeven == "X") || (negen == "X" && een == "X") || (zes == "X" && vier == "X") || (acht == "X" && twee == "X"))) {
+                                document.getElementById('aap5').innerHTML = 'O';
+                                document.getElementById('aap5').style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+                                turn = 'x';
+                                }
+                               else{
+                                if (vijf == "") {
+                                    document.getElementById('aap5').innerHTML = 'O';
+                                    document.getElementById('aap5').style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+                                    turn = 'x';
+                                   
+                                    }
+                                    else{
+                                    if (een == "") {
+                                        document.getElementById('aap1').innerHTML = 'O';
+                                        document.getElementById('aap1').style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+                                        turn = 'x';
+                                        
+                                        }
+                                        else{
+                                        if (negen == "") {
+                                        document.getElementById('aap9').innerHTML = 'O';
+                                        document.getElementById('aap9').style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+                                        turn = 'x';
+                                        } 
+                                            else {
+                                            if (acht == "") {
+                                        document.getElementById('aap8').innerHTML = 'O';
+                                        document.getElementById('aap8').style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+                                        turn = 'x';
+                                        }
+                                        else{
+                                            if (vier == "") {
+                                            document.getElementById('aap4').innerHTML = 'O';
+                                            document.getElementById('aap4').style.textShadow = "-5px 0 purple, 0 5px purple, 5px 0 purple, 0 -5px purple";
+                                            turn = 'x';
+                                            }
+                                                }
+                                            }
+                                        }
+                               
+                                
+                                    }
+                               }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}   
+Check();
+VCheck();
+}, 1000);
+}
+
+
+            
+function Check(){
+    een = document.getElementById("aap1").innerHTML;
+    twee = document.getElementById("aap2").innerHTML;
+    drie = document.getElementById("aap3").innerHTML;
+    vier = document.getElementById("aap4").innerHTML;
+    vijf = document.getElementById("aap5").innerHTML;
+    zes = document.getElementById("aap6").innerHTML;
+    zeven = document.getElementById("aap7").innerHTML;
+    acht = document.getElementById("aap8").innerHTML;
+    negen = document.getElementById("aap9").innerHTML;
+}
+
+function VCheck(){
+    if (een == frikandel && twee == frikandel && drie == frikandel){
+        berichtus("X heeft gewonnen");
+        victory = true;
+    }
+    if (vier == frikandel && vijf == frikandel && zes == frikandel){
+        berichtus("X heeft gewonnen");
+        victory = true;
+    }
+    if (zeven == frikandel && acht == frikandel && negen == frikandel){
+        berichtus("X heeft gewonnen");
+        victory = true;
+    }
+    if (een == frikandel && vier == frikandel && zeven == frikandel){
+        berichtus("X heeft gewonnen");
+        victory = true;
+    }
+    if (twee == frikandel && vijf == frikandel && acht == frikandel){
+        berichtus("X heeft gewonnen");
+        victory = true;
+    }
+    if (drie == frikandel && zes == frikandel && negen == frikandel){
+        berichtus("X heeft gewonnen");
+        victory = true;
+    }
+    if (een == frikandel && vijf == frikandel && negen == frikandel){
+        berichtus("X heeft gewonnen");
+        victory = true;
+    }
+    if (drie == frikandel && vijf == frikandel && zeven == frikandel){
+        berichtus("X heeft gewonnen");
+        victory = true;
+    }
+    
+    
+    if (een == hellman && twee == hellman && drie == hellman){
+        berichtus("O heeft gewonnen");
+        victory = true;
+    }
+    if (vier == hellman && vijf == hellman && zes == hellman){
+        berichtus("O heeft gewonnen");
+        victory = true;
+    }
+    if (zeven == hellman && acht == hellman && negen == hellman){
+        berichtus("O heeft gewonnen");
+        victory = true;
+    }
+    if (een == hellman && vier == hellman && zeven == hellman){
+        berichtus("O heeft gewonnen");
+        victory = true;
+    }
+    if (twee == hellman && vijf == hellman && acht == hellman){
+        berichtus("O heeft gewonnen");
+        victory = true;
+    }
+    if (drie == hellman && zes == hellman && negen == hellman){
+        berichtus("O heeft gewonnen");
+        victory = true;
+    }
+    if (een == hellman && vijf == hellman && negen == hellman){
+        berichtus("O heeft gewonnen");
+        victory = true;
+    }
+    if (drie == hellman && vijf == hellman && zeven == hellman){
+        berichtus("O heeft gewonnen");
+        victory = true;
+    }
+    
+    if ((victory == false) && (een == hellman || een == frikandel) && (twee == hellman || twee == frikandel) && (drie == hellman || drie == frikandel) && (vier == hellman || vier == frikandel) && (vijf == hellman || vijf == frikandel) && (zes == hellman || zes == frikandel) && (zeven == hellman || zeven == frikandel) && (acht == hellman || acht == frikandel) && (negen == hellman || negen == frikandel) ){
+     
+        berichtus("Gelijkspel Jammer!");
+        victory = true;
+    }
+}
+
+function berichtus(aap){
+    document.getElementById('berichies').style.visibility = 'visible';    
+    document.getElementById('berichies').innerHTML = aap + '<button style="width: 8vw" onclick="NewGame()">Herstart</button>';
+}
+
+function NewGame(){
+    location.reload();
+}
+
+function Mode(keus){
+    mode = keus;
+}
+
+function startGame(){
+    if (mode != null){
+    document.getElementById('mode').style.visibility = 'hidden';
+    document.getElementById('startgame').style.visibility = 'hidden';
+    switch(mode){
+        case 'easymode':
+            document.getElementById('dezemode').innerHTML = 'Mode: Easy Mode';
+            break;
+        case 'hardmode':
+            document.getElementById('dezemode').innerHTML = 'Mode: Hard Mode';
+            break;
+        case 'spelerke':
+            document.getElementById('dezemode').innerHTML = 'Mode: Speler vs Speler';
+            break;
+    }
+    }
+}
+       
+            
+</script>
+</head>
+<body>
+
+    <div id='mode'>
+        <div onclick='Mode("easymode")'>Easy Mode</div>       
+        <div onclick='Mode("hardmode")'>Hard Mode</div>
+        <div onclick='Mode("spelerke")'>Speler vs Speler</div>
+    </div>
+    <div id='startgame' onclick='startGame()'>Start Game</div>
+    <div id='dezemode'></div>
+
+        <table>
+             <tr>
+                <td><div id="aap1" onclick="Clicky(1)"></div></td>
+                <td><div id="aap2" onclick="Clicky(2)"></div></td>
+                <td><div id="aap3" onclick="Clicky(3)"></div></td>
+            </tr>
+            <tr>
+                <td><div id="aap4" onclick="Clicky(4)"></div></td>
+                <td><div id="aap5" onclick="Clicky(5)"></div></td>
+                <td><div id="aap6" onclick="Clicky(6)"></div></td>
+            </tr>
+            <tr>
+                <td><div id="aap7" onclick="Clicky(7)"></div></td>
+                <td><div id="aap8" onclick="Clicky(8)"></div></td>
+                <td><div id="aap9" onclick="Clicky(9)"></div></td>
+            </tr>
+        </table>
+        
+        <div id='berichies'></div>
+        <!--<button id='styleknop' onclick='styleAap()'>TREU</button>-->
+    
+    </body>
+</html>
+
+

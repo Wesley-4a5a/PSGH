@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="Simon.css" rel="stylesheet" type="text/css">
+        <script language="javascript" type="text/javascript" src="Simon.js"></script>
+        <title> Simon </title>
+        
+    </head>
+    <body>
+        <div id="Game">
+            <table id="inputbutton">
+                <tr>
+                    <td id="RoundDisplay">Round: 0/0</td>
+                    <td id="blueB">
+                        <input type="button" id="blue" id="0" onclick='Button("blue");'>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td id="greenB">
+                        <input type="button" id="green" id="1" onclick='Button("green");'>
+                    </td>
+                    <td></td>
+                    <td id="redB">
+                        <input type="button" id="red" id="2" onclick='Button("red");'>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="yellowB">
+                        <input type="button" id="yellow" id="3" onclick='Button("yellow");'>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+            
+            <button onclick="Display(); Start();" id="Start">Start Game</button>
+            
+            <button onclick="Nextround();" id="Next">Next Round</button>
+            
+            <div id="Verloren">
+                You Lost!!<br>
+                <button id="Retry" onclick="history.go(0)">Retry?</button>
+            </div>
+            
+            <div id="Gewonnen">
+                You Won!!<br>
+                <button id="Retry" onclick="history.go(0)">Again?</button>
+            </div>
+            
+            <div id="Mode">
+                <p>Choose <br> mode:</p>
+                <button id="Easy" onclick='Mode("Easy")'>Easy</button>
+                <br>
+                <button id="Normal" onclick='Mode("Normal")'>Normal</button>
+                <br>
+                <button id="Hard" onclick='Mode("Hard")'>Hard</button>
+            </div>
+        </div>
+        
+        <a href="../index.html"><input id=back type="button" value="Back"></a>
+        
+    </body>
+</html>
+

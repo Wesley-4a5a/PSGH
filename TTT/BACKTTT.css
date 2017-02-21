@@ -1,0 +1,48 @@
+body{
+    background-image: url("Victorian.png");
+    
+}
+
+th{
+    background-color: white;
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 900;
+    width:300px;
+    height: 50px;
+}
+
+table{
+    width: 250px;
+    height: 250px;
+    position:relative;
+    top: 100px;
+    margin: 0 auto;
+    border: 1px #00FF00 groove;
+}
+
+input{
+    width:100px;
+    height:100px;
+    font-weight:900;
+    font-size: 300%;
+    background-color: gray;
+    opacity: 0.77;
+}
+
+#newgame{
+    position:relative;
+    left: 44%;
+    top: 200px;
+    width: 230px;
+    font-size: 200%;
+}
+
+#back{
+    position:fixed;
+    top: 2%;
+    right: 2%;
+    width: 75px;
+    height: 75px;
+    font-size: 100%;
+}

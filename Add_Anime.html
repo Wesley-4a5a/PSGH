@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Anime</title>
+        <link href="datgames.css" rel="stylesheet" type="text/css"> 
+    </head>
+    
+    <body>
+    <div id="AnimeInput">
+        <form action="Add_Data.php" method="POST"  />
+            <p>Anime: <input type="text" name="Anime" /></p>
+            <p>Episodes: <input type="number" name="Episodes" /></p>
+            <p>Status: <select name="Status">
+                            <option value="Plan to watch">Plan to watch</option>
+                            <option value="Watching">Watching</option>
+                            <option value="Completed">Completed</option>
+                            <option value="Dropped">Dropped</option>
+                           </select></p>
+            <p>Score: <input type="number" step="0.1" name="Score" /></p>
+            <input type="submit" value="Submit" />
+        </form>     
+       </div> 
+       <a href="index.html"><input id=back type="button" value="Back"></a>
+       <br>
+       <a href="Show_Data.php"><input type="button" value="Show Data"></a>
+    </body>
+</html>

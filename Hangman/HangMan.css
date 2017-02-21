@@ -1,0 +1,189 @@
+body{
+    background-image: url("Victorian.png");
+    overflow-x:hidden;
+}
+
+input{
+    width:50px;
+    height:50px;
+    font-weight: 900;
+    font-size: 120%;
+    margin: 5px;
+    opacity: 0.8;
+}
+
+#Alphabet{
+    max-width: 455px;
+    border-right: 2px blue groove;
+    border-bottom: 2px blue groove;
+    float:left;
+    margin: -10px;
+    background-color: gray;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+#Hang{
+    position:relative;
+    left: 75%;
+    top:-100px;
+    font-size:400%;
+    font-weight:900;
+    clear:both;
+}
+
+#Hang1{
+    position:absolute;
+    top: 6em;
+    visibility:hidden;
+    color: white;
+}
+
+#Hang2{
+    position:absolute;
+    visibility:hidden;
+    color: white;
+}
+
+#Hang3{
+    position:relative;
+    left: 0.5em;
+    top: -1em;
+    visibility:hidden;
+    color: white;
+}
+
+#Hang4{
+    position:relative;
+    left: 2em;
+    top: -1em;
+    visibility:hidden;
+    color: white;
+}
+
+#Hang5{
+    position:relative;
+    left: 1em;
+    visibility:hidden;
+    color: white;
+}
+
+#Hang6{
+    position:relative;
+    left: -0.25em;
+    top: 1em;
+    visibility:hidden;
+    color: white;
+}
+
+#Hang7{
+    position:relative;
+    left: -1em;
+    top: 2em;
+    visibility:hidden;
+    color: white;
+}
+
+#Hang8{
+    position:relative;
+    left: -1.8em;
+    top: 3em;
+    visibility:hidden;
+    color: white;
+}
+
+#Woord{
+    min-width:200px !important;
+    position: relative;
+    top: -20%;
+}
+
+#newgame{
+    position: absolute;
+    bottom: 3%;
+    left: 29%;
+    width: 20%;
+}
+
+#startgame{
+    position: absolute;
+    bottom: 3%;
+    left: 51%;
+    width: 20%;
+}
+
+#back{
+    position:fixed;
+    top: 2%;
+    right: 2%;
+    width: 75px;
+    height: 75px;
+    font-size: 100%;
+}
+
+#Hint{
+    position: relative;
+    top: -10%;
+    left: 0%;
+    width: 30%;
+}
+
+#Gordijn{
+    position:absolute;
+    left:0%;
+    top:0%;
+    background-color: gray;
+    width: 453px;
+    height: 238px;
+    z-index:10;
+}
+
+#Letter1{
+  font-size:0%;
+  font-weight: 900;
+  margin: 5px;
+}
+#Letter2{
+  font-size:0%;
+  font-weight: 900;
+  margin: 5px;
+}
+#Letter3{
+  font-size:0%;
+  font-weight: 900;
+  margin: 5px;
+}
+#Letter4{
+  font-size:0%;
+  font-weight: 900;
+  margin: 5px;
+}
+#Letter5{
+  font-size:0%;
+  font-weight: 900;
+  margin: 5px;
+}
+#Letter6{
+  font-size:0%;
+  font-weight: 900;
+  margin: 5px;
+}
+#Letter7{
+  font-size:0%;
+  font-weight: 900;
+  margin: 5px;
+}
+#Letter8{
+  font-size:0%;
+  font-weight: 900;
+  margin: 5px;
+}
+#Letter9{
+  font-size:0%;
+  font-weight: 900;
+  margin: 5px;
+}
+#Letter10{
+  font-size:0%;
+  font-weight: 900;
+  margin: 5px;
+}
