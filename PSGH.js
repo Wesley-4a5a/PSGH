@@ -39,4 +39,16 @@ function consolePost(){
       var cssLink = $('link[href*="fake.css"]');
       cssLink.replaceWith('<link href="PSGHBackdoor.css" type="text/css" rel="stylesheet">');
   }
+  else if (input == 'InitialD'){
+      document.getElementById('consoleShow').innerHTML = 'Processing Multitrack Drifting...';
+      var delayMillis = 1500;
+      setTimeout(function() {
+        window.open("http://www.multitrackdrifting.nu","_self");
+      }, delayMillis);
+
+
+  }
+  else if (input == 'help'){
+      document.getElementById('consoleShow').innerHTML = 'Commands: "yarr", "InitialD", "help"';
+  }
 }
