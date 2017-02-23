@@ -97,7 +97,7 @@ function consolePost() {
             music.play();
             break;
         case 'help':
-            document.getElementById('consoleShow').innerHTML += 'Commands: "yarr", "InitialD", "help", "Pause", "Play", "Purge", "Ecchi",\n';
+            document.getElementById('consoleShow').innerHTML += 'Commands: "yarr", "InitialD", "help", "Pause", "Play", "Purge", "Ecchi", "Zelda"\n';
             break;
         case 'purge':
             document.getElementById('consoleShow').innerHTML += 'Purging Pirate Stalins Gamehub, Destroying Dennis...\n';
