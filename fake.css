@@ -132,3 +132,11 @@ a:visited{
     bottom: 5vh;
 }
 
+#rupee{
+  position: absolute;
+  top: 57vh;
+  left: 48.5vw;
+  width: 2.2vw;
+  height: 6vh;
+  border: red 5px groove;
+}

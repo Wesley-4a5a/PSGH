@@ -6,6 +6,8 @@ function Leave() {
     document.getElementById("submenu").style.visibility = "hidden";
 }
 
+
+
 var consoleState = 'hidden';
 $(document).ready(function() {
 
@@ -112,4 +114,13 @@ function consolePost() {
     }
     document.getElementById('consoleInput').value = null;
     document.getElementById("consoleShow").scrollTop = document.getElementById("consoleShow").scrollHeight;
+}
+
+
+function secretRupee(){
+    console.log('1');
+    var secretTune = document.getElementById('zeldaSecret');
+        console.log('2');
+    secretTune.play();
+        console.log('3');
 }
