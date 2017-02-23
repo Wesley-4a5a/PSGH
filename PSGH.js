@@ -113,8 +113,15 @@ function consolePost() {
                 window.open("https://nl.pinterest.com/simo_hayhaa/ecchi-gallery/", "_self");
             }, delayMillis);
             break;
+       case 'zelda':
+            document.getElementById('consoleShow').innerHTML += "It's a secret to everybody\n";
+            var delayMillis = 1500;
+            setTimeout(function() {
+                window.open("http://www.nintendoemulator.com/nes/4476", "_self");
+            }, delayMillis);
+            break;
         default:
-            //
+            // :>/
     }
     document.getElementById('consoleInput').value = null;
     document.getElementById("consoleShow").scrollTop = document.getElementById("consoleShow").scrollHeight;
