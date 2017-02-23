@@ -101,22 +101,21 @@ a:visited{
     bottom: 5vh;
 }
 
-#console{
-  visibility: hidden;
-  position: absolute;
-  left: 5vw;
-  top: 5vh;
-  width: 25vw;
-  height: 25vh;
-  border: 1px red solid;
-
+#console {
+    visibility: hidden;
+    position: absolute;
+    left: 5vw;
+    top: 5vh;
+    width: 25vw;
+    height: 25vh;
+    border: 1px red solid;
 }
 
-#consoleShow{
-  width: inherit;
-  height: inherit;
+#consoleShow {
+    width: inherit;
+    height: inherit;
 }
 
-#consoleInput{
-  width: inherit;
+#consoleInput {
+    width: inherit;
 }
