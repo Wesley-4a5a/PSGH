@@ -120,7 +120,7 @@ function consolePost() {
 function secretRupee(){
     console.log('1');
     var secretTune = document.getElementById('zeldaSecret');
-        console.log('2');
+    console.log('2');
     secretTune.play();
-        console.log('3');
+    console.log('3');
 }
