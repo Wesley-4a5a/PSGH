@@ -110,14 +110,14 @@ function consolePost() {
             }, delayMillis);
             break;
         default:
-        //
+            //
     }
     document.getElementById('consoleInput').value = null;
     document.getElementById("consoleShow").scrollTop = document.getElementById("consoleShow").scrollHeight;
 }
 
 
-function secretRupee(){
+function secretRupee() {
     console.log('1');
     var secretTune = document.getElementById('zeldaSecret');
     console.log('2');
