@@ -129,3 +129,15 @@ a:visited {
     width: 2.2vw;
     height: 6vh;
 }
+
+#emulator{
+    visibility: hidden;
+}
+
+#emulator2{
+    visibility: hidden;
+}
+
+#spotifyPlayer{
+
+}

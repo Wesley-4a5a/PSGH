@@ -115,10 +115,11 @@ function consolePost() {
             break;
        case 'zelda':
             document.getElementById('consoleShow').innerHTML += "It's a secret to everybody\n";
-            var delayMillis = 1500;
-            setTimeout(function() {
-                window.open("http://www.nintendoemulator.com/nes/4476", "_self");
-            }, delayMillis);
+            
+            break;
+        case 'spotify':
+            document.getElementById('consoleShow').innerHTML += 'Well thats a silly thing to say!\n';            
+            // document.getElementById('spotifyPlayer').outerHTML = '<iframe id="spotifyPlayer" src="https://embed.spotify.com/?uri=spotify:user:1135242254:playlist:0oNeLF6mUe9x8vd6FCkvSj" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>';
             break;
         default:
             // :>/
