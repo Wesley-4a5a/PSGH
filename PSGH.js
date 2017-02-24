@@ -9,6 +9,7 @@ function Leave() {
 
 
 var consoleState = 'hidden';
+document.getElementById('consoleShow').innerHTML += 'Commands: "yarr", "InitialD", "help", "Pause", "Play", "Purge", "Ecchi", "Zelda", "Spotify"\n';
 
 //jQuery Start
 $(document).ready(function() {
@@ -38,7 +39,7 @@ $(document).ready(function() {
                 $("#console").animate({
                     top: '-35vh'
                 }, 500);
-                var delayMillis = 1000;
+                var delayMillis = 500;
                 setTimeout(function() {
                     document.getElementById('console').style.visibility = 'hidden';
                     consoleState = 'hidden';
@@ -70,6 +71,9 @@ function consolePost() {
     var randomNumber;
 
     switch (res) {
+      case 'help':
+          document.getElementById('consoleShow').innerHTML += 'Commands: "yarr", "InitialD", "help", "Pause", "Play", "Purge", "Ecchi", "Zelda", "Spotify"\n';
+          break;
         case 'yarr':
             for (i = 0; i < 100; i = i + randomNumber) {
                 document.getElementById('consoleShow').innerHTML += 'Injecting Stalin ' + i + '%\n';
@@ -96,9 +100,6 @@ function consolePost() {
         case 'play':
             music.play();
             break;
-        case 'help':
-            document.getElementById('consoleShow').innerHTML += 'Commands: "yarr", "InitialD", "help", "Pause", "Play", "Purge", "Ecchi", "Zelda"\n';
-            break;
         case 'purge':
             document.getElementById('consoleShow').innerHTML += 'Purging Pirate Stalins Gamehub, Destroying Dennis...\n';
             document.body.style.backgroundImage = 'url("IMG/Victorian.png")';
@@ -115,11 +116,11 @@ function consolePost() {
             break;
        case 'zelda':
             document.getElementById('consoleShow').innerHTML += "It's a secret to everybody\n";
-            
+
             break;
         case 'spotify':
-            document.getElementById('consoleShow').innerHTML += 'Well thats a silly thing to say!\n';            
-            // document.getElementById('spotifyPlayer').outerHTML = '<iframe id="spotifyPlayer" src="https://embed.spotify.com/?uri=spotify:user:1135242254:playlist:0oNeLF6mUe9x8vd6FCkvSj" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>';
+            document.getElementById('consoleShow').innerHTML += 'Well thats a silly thing to say!\n';
+            document.getElementById('spotifyPlayer').style.visibility = 'visible';
             break;
         default:
             // :>/
@@ -153,7 +154,7 @@ function secretRupee() {
             var emulator = $('#emulator');
             if(emulator)
             {
-                var flashvars = 
+                var flashvars =
                 {
                     system : 'nes',
                     url : '/roms/LegendofZelda.nes'
