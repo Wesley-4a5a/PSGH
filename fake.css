@@ -17,18 +17,21 @@ body {
 }
 
 #consoleShow {
-    width: inherit;
+    width: 26vw;
     height: inherit;
     background-color: black;
     color: #39FF14;
     resize: none;
-    padding-left: 10px;
+    padding-left: 0.6vw;
+    border: white 0.1vh solid;
 }
 
 #consoleInput {
     position: relative;
     top: -1vh;
-    width: 25.3vw;
+    left: -0.026vw;
+    width: 26.9vw;
+    padding-left: 0.6vw;
     background-color: black;
     color: #39FF14;
     border-top: none;
