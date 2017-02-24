@@ -138,7 +138,7 @@ function secretRupee() {
 
 
 
-  var resizeOwnEmulator = function(width, height)
+    var resizeOwnEmulator = function(width, height)
     {
         var emulator = $('#emulator');
         emulator.css('width', width);
@@ -154,8 +154,8 @@ function secretRupee() {
             {
                 var flashvars = 
                 {
-                    system : 'sega',
-                    url : '/roms/Flappy Bird (PD) v1.0.gen'
+                    system : 'nes',
+                    url : '/roms/LegendofZelda.nes'
                 };
                 var params = {};
                 var attributes = {};
