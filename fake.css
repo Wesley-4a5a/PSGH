@@ -13,16 +13,28 @@ body {
     top: -30vh;
     width: 25vw;
     height: 25vh;
-    border: 1px red solid;
+    background-color: black;
 }
 
 #consoleShow {
-    width: inherit;
+    width: 26vw;
     height: inherit;
+    background-color: black;
+    color: #39FF14;
+    resize: none;
+    padding-left: 0.6vw;
+    border: white 0.1vh solid;
 }
 
 #consoleInput {
-    width: inherit;
+    position: relative;
+    top: -1vh;
+    left: -0.026vw;
+    width: 26.9vw;
+    padding-left: 0.6vw;
+    background-color: black;
+    color: #39FF14;
+    border-top: none;
 }
 
 #nav {
@@ -139,5 +151,8 @@ a:visited {
 }
 
 #spotifyPlayer{
-
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
 }
