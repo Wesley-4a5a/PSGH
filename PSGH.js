@@ -136,9 +136,10 @@ function secretRupee() {
     console.log('2');
     secretTune.play();
     console.log('3');
+    showEmu();
 }
 
-
+function showEmu(){
 
     var resizeOwnEmulator = function(width, height)
     {
@@ -166,9 +167,10 @@ function secretRupee() {
                 params.allowFullScreen = 'true';
                 params.allowFullScreenInteractive = 'true';
 
-                swfobject.embedSWF('flash/Nesbox.swf', 'emulator', '640', '480', '11.2.0', 'flash/expressInstall.swf', flashvars, params, attributes);
+                swfobject.embedSWF('flash/Nesbox.swf', 'emulator', '800', '600', '11.2.0', 'flash/expressInstall.swf', flashvars, params, attributes);
             }
         }
 
         embed();
     });
+}

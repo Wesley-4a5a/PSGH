@@ -143,11 +143,9 @@ a:visited {
 }
 
 #emulator{
-    visibility: hidden;
-}
-
-#emulator2{
-    visibility: hidden;
+  position: absolute;
+  top: 25vh;
+  left: 33vw;
 }
 
 #spotifyPlayer{

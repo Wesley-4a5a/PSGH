@@ -119,3 +119,10 @@ a:visited{
 #consoleInput {
     width: inherit;
 }
+
+#spotifyPlayer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+}
