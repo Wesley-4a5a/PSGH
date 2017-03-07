@@ -9,7 +9,7 @@ function Leave() {
 
 
 var consoleState = 'hidden';
-document.getElementById('consoleShow').innerHTML += 'Commands: "yarr", "InitialD", "help", "Pause", "Play", "Purge", "Ecchi", "Zelda", "Spotify"\n';
+var initialHelp = document.getElementById('consoleShow').innerHTML += 'Commands: "yarr", "InitialD", "Rainbow", "help", "Pause", "Play", "Purge", "Ecchi", "Zelda", "Spotify"\n';
 
 //jQuery Start
 $(document).ready(function() {
@@ -72,7 +72,7 @@ function consolePost() {
 
     switch (res) {
       case 'help':
-          document.getElementById('consoleShow').innerHTML += 'Commands: "yarr", "InitialD", "help", "Pause", "Play", "Purge", "Ecchi", "Zelda", "Spotify"\n';
+          document.getElementById('consoleShow').innerHTML += initialHelp;
           break;
         case 'yarr':
             for (i = 0; i < 100; i = i + randomNumber) {
@@ -121,6 +121,13 @@ function consolePost() {
         case 'spotify':
             document.getElementById('consoleShow').innerHTML += 'Well thats a silly thing to say!\n';
             document.getElementById('spotifyPlayer').style.visibility = 'visible';
+            break;
+            case 'rainbow':
+              document.getElementById('consoleShow').innerHTML += 'Fun Fact! Did you know Joseph Stalin killed between 3 million to 60 million people?\n';
+              var delayMillis = 1000;
+              setTimeout(function() {
+                  window.open("http://www.psgh.nl/RainbowStalin/rainbow.html", "_self");
+              }, delayMillis);
             break;
         default:
             // :>/
