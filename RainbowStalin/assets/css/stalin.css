@@ -24,3 +24,9 @@
     left: 0;
     right: 0
     }
+	
+	
+body{
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
