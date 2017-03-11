@@ -6,7 +6,9 @@
 ******************************************/
   
   //Configure below to change URL path to the snow image
-  var snowsrc="assets/img/head-bounce.gif"
+  var snowsrc="img/head-bounce.gif"
+  var snowsrc1="img/stalindance.gif"
+  var aap = 1;
   // Configure below to change number of snow to render
   var no = 10;
   // Configure whether snow should disappear after x seconds (0=never):
@@ -53,7 +55,14 @@
       if (i == 0) {
         document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dynamicdrive.com\"><img src='"+snowsrc+"' border=\"0\"><\/a><\/div>");
       } else {
+		  if(aap==1){
         document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+		aap = 0;
+		  }
+		  else{
+		document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc1+"' border=\"0\"><\/div>");
+		aap = 1;
+		}
       }
     }
   }
