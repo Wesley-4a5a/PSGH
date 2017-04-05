@@ -15,7 +15,7 @@ var initialHelp = document.getElementById('consoleShow').innerHTML += 'Commands:
 $(document).ready(function() {
 
 
-    $('body').keydown(function(e) {
+    $('body').keyup(function(e) {
         if (e.keyCode == 192) {
             if (consoleState == 'hidden') {
 
@@ -80,7 +80,7 @@ function consolePost() {
                 //loadingFake(i);
                 randomNumber = Math.floor((Math.random() * 18) + 2);
             }
-            document.getElementById('consoleShow').innerHTML += 'Injecting Stalin 100%\n Inection Complete\n';
+            document.getElementById('consoleShow').innerHTML += 'Injecting Stalin 100%\n Injection Complete\n';
 
             document.getElementById('consoleShow').innerHTML += 'Welcome back Captain Stalin!\n';
             var cssLink = $('link[href*="fake.css"]');
@@ -174,7 +174,7 @@ function showEmu(){
                 params.allowFullScreen = 'true';
                 params.allowFullScreenInteractive = 'true';
 
-                swfobject.embedSWF('flash/Nesbox.swf', 'emulator', '640', '480', '11.2.0', 'flash/expressInstall.swf', flashvars, params, attributes);
+				swfobject.embedSWF('flash/Nesbox.swf', 'emulator', '510', '480', '11.2.0', 'flash/expressInstall.swf', flashvars, params, attributes);
             }
         }
 
